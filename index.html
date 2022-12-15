@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://res.cloudinary.com/dpruqtqw2/image/upload/v1671112680/logo_calcu_l30bn0.jpg">
+    <title>Mi Caluladora</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <table class="contCalculadora">
+        <tr>
+            <td class="contPantalla">
+
+                <div class="contCuenta">
+                    <input type="text" class="box" id="cuenta" disabled />
+                    <input type="text" class="box" id="resultado" disabled />
+                </div>
+
+                <div>
+                    <input class="button btnLateDer" type="button" value="/" onclick="btn('/')" />
+                    <input class="button btnLateDer" type="button" value="*" onclick="btn('*')" />
+                </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="button btnNumber" type="button" value="7" onclick="btn('7')" />
+                <input class="button btnNumber" type="button" value="8" onclick="btn('8')" />
+                <input class="button btnNumber" type="button" value="9" onclick="btn('9')" />
+                <input class="button btnLateDer" type="button" value="-" onclick="btn('-')" />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="button btnNumber" type="button" value="4" onclick="btn('4')" />
+                <input class="button btnNumber" type="button" value="5" onclick="btn('5')" />
+                <input class="button btnNumber" type="button" value="6" onclick="btn('6')" />
+                <input class="button btnLateDer" type="button" value="+" onclick="btn('+')" />
+            </td>
+        </tr>
+
+        <tr>
+            <td class="contSignos">
+                <div class="signos">
+                    <input class="button btnNumber" type="button" value="1" onclick="btn('1')" />
+                    <input class="button btnNumber" type="button" value="2" onclick="btn('2')" />
+                    <input class="button btnNumber" type="button" value="3" onclick="btn('3')" />
+
+                    <input class="button btnPunto" type="button" value="." onclick="btn('.')" />
+                    <input class="button btnNumber" type="button" value="0" onclick="btn('0')" />
+                    <input id="btnBor" class="button" type="button" value="C" onclick="borrar()" />
+                </div>
+
+                <input  class="button btnLateDer" type="button" value="=" onclick="calculo()" />
+            </td>
+        </tr>
+
+    </table>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>

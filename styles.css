@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: New York;
+}
+
+body {
+    background: black;
+    width: 100%;
+}
+
+.contCalculadora {
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    border: none;
+    padding: 30px;
+}
+
+.box {
+    width: 95%;
+    cursor: pointer;
+    border: none;
+}
+
+#resultado {
+    width: 95%;
+    -webkit-text-fill-color: white;
+}
+
+.contPantalla {
+    display: flex;
+}
+
+#resultado,
+#cuenta {
+    margin: 0;
+}
+
+.contPantalla .contCuenta input {
+    box-shadow: none;
+    background: transparent;
+    -webkit-text-fill-color: white;
+    opacity: 1;
+}
+
+.contPantalla input:active {
+    box-shadow: none;
+    color: white;
+}
+
+.contCuenta {
+    border-radius: 25px;
+    border: none;
+    margin: 5px;
+}
+
+input {
+    border-radius: 25px;
+    border: none;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.contSignos {
+    display: flex;
+} 
+
+.signos {
+    width: 95%;
+}
+
+.button {
+    width: 71px;
+}
+
+.btnNumber{
+    background-color: rgb(90, 84, 84);
+}
+
+.btnNumber:active{
+    color:  rgb(90, 84, 84);
+    background-color: white;
+}
+
+#btnBor,
+.btnPunto{
+    background-color: rgb(201, 193, 193);
+}
+
+#btnBor:active,.btnPunto:active{
+    color:  rgb(201, 193, 193);
+    background-color: white;
+}
+
+.btnLateDer{
+    background-color: #eba119;
+}
+
+.btnLateDer:active{
+    color: #eba119;
+    background-color: white;
+}
+
+@media (max-width: 720px) {
+    .contCalculadora {
+        width: 320px;
+        padding: 20px;
+    }
+
+    .button {
+        width: 56px;
+        padding: 20px;
+    }
+
+    .contPantalla input {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contCalculadora {
+        width: 300px;
+        padding: 10px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+}
