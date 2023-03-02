@@ -22,6 +22,11 @@ body {
     padding: 30px;
 }
 
+.contPantalla{
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
 .box {
     width: 95%;
     cursor: pointer;
@@ -30,7 +35,7 @@ body {
 
 #resultado {
     width: 95%;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: rgb(177, 162, 162);
 }
 
 .contPantalla {
@@ -45,7 +50,7 @@ body {
 .contPantalla .contCuenta input {
     box-shadow: none;
     background: transparent;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: rgb(177, 162, 162);
     opacity: 1;
 }
 
